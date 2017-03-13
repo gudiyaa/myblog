@@ -1,0 +1,27 @@
+body {
+  min-height: 1000px;
+}
+
+.navbar-static-top {
+  margin-bottom: 19px;
+}
+
+.navbar-default .navbar-brand {
+	 color:black;
+}
+
+.navbar-default .navbar-brand:hover {
+	 color:#999;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	 color:black;
+}
+
+.navbar-default .navbar-toggle {
+	 border-color: transparent;
+}
+
+.navbar-toggle{
+	background-color: silver;
+}

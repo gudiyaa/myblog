@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="row">
+	<div class="col-sm-6">
+	        <h2><b>
+                Publish your passions your way..</b></h2>
+        <p>Chances are you've heard about blogging. You may have heard a story about a blogger uncovering information about a politician or controversial subject. Maybe you've even read a book or seen a movie based on a blog.</p>
+        <p>A blog can be about literally anything.</p>
+
+        <p>
+          <a class="btn btn-lg btn-primary" href="{% url 'registration_register' %}" role="button">Let's Start!! &raquo;</a>        </p>
+    </div>
+        <div class="col-sm-6">
+        	<iframe width="560" height="315" src="https://www.youtube.com/embed/irPU22kDigE" frameborder="0" allowfullscreen></iframe>
+        </div>
+</div>
+</div>
+<hr color="black"/>
+
+<div class="container">
+      <div class="jumbotron" style="background-color: #C0C0C0;">   
+<div class="row">
+    <div class="col-sm-4">
+        <p><b>Create a unique and beautiful BLOG.It's easy and free..</b></p>
+        <a href="{% url 'blogs' %}"><img src="{% static 'newsletter/img/create.png' %}" class="img-responsive" height="200px"></a>
+    </div>
+    <div class="col-sm-4">
+        <p><b>MyBlog lets you safely store thousands of posts, photos, and more.  </b></p>
+        <a href="{% url 'blogs' %}"><img src="{% static 'newsletter/img/hang.png' %}" class="img-responsive" height="200px"></a>
+    </div>
+    <div class="col-sm-4">
+        <p><b>Know your audience..You’ll see where your audience is coming from and what they’re interested in. </b></p>
+        <a href="{% url 'blogs' %}"><img src="{% static 'newsletter/img/audience.png' %}" class="img-responsive" height="200px"></a>
+    </div>
+</div>
+</div>
+</div>
+{% endblock %}
+
+	
+
