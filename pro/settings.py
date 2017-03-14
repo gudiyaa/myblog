@@ -25,7 +25,7 @@ SECRET_KEY = 'j3n8k_s*t&x@_%&mv%(6y&3#*ut+oy-oqf_erxliu6146ru^k1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['Shivanky.pythonanywhere.com']
 
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_HOST_USER='monk.python@gmail.com'
@@ -129,10 +129,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR),"static_in_env","static_root")
+
 STATICFILES_DIR = [
-    os.path.join(BASE_DIR,"newsletter","static"),
-    ]
+'/home/Shivanky/myblog/newsletter/static',
+]
+STATIC_ROOT = '/home/Shivanky/myblog/Static'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT= os.path.join(os.path.dirname(BASE_DIR),"static_in_env","media_root")
