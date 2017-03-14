@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 import os
+try:
+    import pymysql
+    pymysql.install_as_MySQLdb()
+except ImportError:
+    pass
 import sys
 
 if __name__ == "__main__":
