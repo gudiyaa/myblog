@@ -32,11 +32,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['Shivanky.pythonanywhere.com']
 
-EMAIL_HOST='smtp.gmail.com'
-EMAIL_HOST_USER='monk.python@gmail.com'
-EMAIL_HOST_PASSWORD='iamhappy'
-EMAIL_HOST_PORT=587
-EMAIL_USE_TLS=True
+# EMAIL_HOST='smtp.gmail.com'
+# EMAIL_HOST_USER='monk.python@gmail.com'
+# EMAIL_HOST_PASSWORD='iamhappy'
+# EMAIL_HOST_PORT=587
+# EMAIL_USE_TLS=True
 # Application definition
 
 INSTALLED_APPS = [
@@ -144,9 +144,9 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT= os.path.join(os.path.dirname(BASE_DIR),"static_in_env","media_root")
 
 REGISTRATION_OPEN = True
-ACCOUNT_ACTIVATION_DAYS = 7
-REGISTRATION_AUTO_LOGIN = True
-SITE_ID=1
+# ACCOUNT_ACTIVATION_DAYS = 7
+# REGISTRATION_AUTO_LOGIN = True
+# SITE_ID=1
 LOGIN_REDIRECT_URL='/home'
 LOGIN_URL = '/accounts/login'
 CRISPY_TEMPLATE_PACK = "bootstrap3"
