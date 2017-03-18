@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
-    # 'django.contrib.sites',
+    'django.contrib.sites',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
@@ -144,9 +144,9 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT= os.path.join(os.path.dirname(BASE_DIR),"static_in_env","media_root")
 
 REGISTRATION_OPEN = True
-# ACCOUNT_ACTIVATION_DAYS = 7
-# REGISTRATION_AUTO_LOGIN = True
-# SITE_ID=1
+ACCOUNT_ACTIVATION_DAYS = 7
+REGISTRATION_AUTO_LOGIN = True
+SITE_ID=1
 LOGIN_REDIRECT_URL='/home'
 LOGIN_URL = '/accounts/login'
 CRISPY_TEMPLATE_PACK = "bootstrap3"
