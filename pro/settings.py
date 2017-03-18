@@ -143,7 +143,10 @@ STATIC_ROOT = '/home/Shivanky/myblog/Static'
 MEDIA_URL = '/media/'
 MEDIA_ROOT= os.path.join(os.path.dirname(BASE_DIR),"static_in_env","media_root")
 
+REGISTRATION_OPEN = True
 ACCOUNT_ACTIVATION_DAYS = 7
 REGISTRATION_AUTO_LOGIN = True
 SITE_ID=1
-CRISPY_TEMPLATE_PACK="bootstrap3"
+LOGIN_REDIRECT_URL='/home'
+LOGIN_URL = '/accounts/login'
+CRISPY_TEMPLATE_PACK = "bootstrap3"
