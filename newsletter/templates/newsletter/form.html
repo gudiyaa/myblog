@@ -2,24 +2,7 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-{% if request.user.is_authenticated %}
-  	{% if title %}
-    	<div class="row">
-			<div class="col-sm-12">
-				<h1><center> {{ title }} </center></h1>
-			</div>
-		</div>
-	{% endif %}
-	<div class="row">
-		<div class="col-sm-6 col-sm-offset-3">
-			<form method="POST" action=".">
-			{% csrf_token %}
-			{{ form|crispy }}
-			<input type="submit" value="Submit">
-			</form>
-		</div>
-	</div>
-	{% else %}
-		<h2>You are not Logged in.</h2>
-{% endif %}
+<h1>Email:</h1>
+<p class="lead">shivanky1139@gmail.com</p>
+
 {% endblock %}
