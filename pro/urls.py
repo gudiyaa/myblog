@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     
     url(r'^',include('newsletter.urls')),
-    url(r'^accounts/',include('registration.backends.default.urls')),
+    url(r'^accounts/',include('registration.backends.simple.urls')),
     url(r'^accounts/profile/',include('newsletter.urls')),
 ] 
 
